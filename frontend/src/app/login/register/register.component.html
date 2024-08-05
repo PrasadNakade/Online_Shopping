@@ -1,0 +1,40 @@
+<!-- 
+
+
+Name:: <input type="text" [(ngModel)]="name"><br>
+UserName:: <input type="text" [(ngModel)]="username"><br>
+Password:: <input type="password" [(ngModel)]="password">
+<select [(ngModel)]="selectedRole">
+    <option *ngFor="let role of roles" [value]="role.value">{{role.name}}</option>
+  </select><br>
+<button (click)="registerYourself()">Register</button> -->
+
+
+<div class="register-container">
+  <div class="register-form">
+      <div class="logo">
+             <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo"> -->
+      </div>
+      <h1>Create account</h1>
+      
+      <label for="name">Yourname::</label>
+      <input type="text" id="name" [(ngModel)]="name"><br>
+      
+      <label for="username">Username::</label>
+      <input type="text" id="username" [(ngModel)]="username"><br>
+      
+      <label for="password">Password::</label>
+      <input type="password" id="password" [(ngModel)]="password"><br>
+
+      <label for="role">Role::</label>
+      <select id="role" [(ngModel)]="selectedRole">
+          <option *ngFor="let role of roles" [value]="role.value">{{role.name}}</option>
+      </select><br>
+      
+      <button (click)="registerYourself()">Create your Amazon account</button>
+      
+      <!-- <div class="back-to-login">
+          <button>Back to Login</button>
+      </div> -->
+  </div>
+</div>

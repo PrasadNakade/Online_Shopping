@@ -1,0 +1,65 @@
+<!-- <div *ngIf="isLogin">
+  <label for="username">username:</label>
+  <input type="text" id="username" [(ngModel)]="username"><br>
+  
+  <label for="password">password:</label>
+  <input type="password" id="password" [(ngModel)]="password"><br>
+  
+  <button (click)="login()">login</button><br>
+  
+  <button (click)="changeWts(1)">Registration</button>
+</div>
+
+<div *ngIf="whatToShow === 1">
+  <app-register></app-register>
+  <button (click)="changeWts(0)">Back to Login</button>
+</div> -->
+<div class="login-container" *ngIf="isLogin">
+    <div class="login-form">
+
+        <div  class="shopping-center">
+            Online Shopping Center
+        </div>
+
+        <div class="logo">
+            <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo"> -->
+           
+        </div>
+        <!-- <h1>Sign in</h1> -->
+        <label for="username">Enter Username::</label>
+        <input type="text" id="username" [(ngModel)]="username"><br>
+        <label for="password">Enter Password::</label>
+        <input type="password" id="password" [(ngModel)]="password"><br>
+        
+        <button (click)="login()">Sign In</button>
+        <p>By continuing, you agree to Online Shopping Center's  <a href="#">Terms of Service </a> and <a href="#">Privacy Policy.</a>.</p>
+        <br>
+        <div class="divider">
+            <hr>
+            <span>New to Online Shopping Center?</span>
+            <hr>
+        </div>
+        <button class="create-account-btn" (click)="changeWts(1)">Create Your New Account</button>
+    </div>
+</div>
+
+<div *ngIf="whatToShow === 1">
+    <app-register></app-register>
+    <button class="yellow-button" (click)="changeWts(0)">Back To Login</button>
+</div>
+
+
+
+
+<div class="demo" *ngIf="whatToShow==0">
+  <h3>Demo Accounts-</h3>
+    <h3>Admin Account</h3>
+    <p><b>Username:</b> admin</p>
+    <p><b>Password:</b> admin</p>
+    <h3>Seller Account</h3>
+    <p><b>Username:</b> seller</p>
+    <p><b>Password:</b> seller</p>
+    <h3>Buyer Account</h3>
+    <p><b>Username:</b> buyer</p>
+    <p><b>Password:</b> buyer</p>
+</div>

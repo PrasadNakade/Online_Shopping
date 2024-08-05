@@ -1,0 +1,106 @@
+/* Overall Registration Container Styling */
+.register-container {
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+    height: 100vh; /* Set container height to 100% viewport height */
+    background-color: #eef2f5; /* Slightly lighter gray background color */
+    font-family: Arial, sans-serif; /* Set a clean font family */
+}
+
+/* Registration Form Styling */
+.register-form {
+    width: 350px; /* Set form width */
+    background-color: #fff; /* White background for the form */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* More rounded corners for the form */
+    padding: 30px; /* Padding for spacing within the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    text-align: center; /* Center text within the form */
+}
+
+/* Logo Styling (if you decide to include an image) */
+.logo {
+    margin-bottom: 20px; /* Add space below the logo */
+}
+
+.logo img {
+    width: 150px; /* Adjust image width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Registration Form Heading */
+.register-form h1 {
+    font-size: 24px; /* Set heading font size */
+    margin-bottom: 20px; /* Add space below the heading */
+    color: #333; /* Darker text color */
+}
+
+/* Labels and Input Fields */
+.register-form label {
+    display: block; /* Display labels on separate lines */
+    margin-bottom: 5px; /* Add space below labels */
+    font-weight: bold; /* Bold text for labels */
+    color: #555; /* Medium gray text color */
+}
+
+.register-form input[type="text"],
+.register-form input[type="password"],
+.register-form select {
+    width: 100%; /* Set input width to full width */
+    padding: 12px; /* Increase padding for better readability */
+    border: 1px solid #ccc; /* Light gray border for inputs */
+    border-radius: 4px; /* Slightly more rounded corners for inputs */
+    box-sizing: border-box; /* Include border in width calculation */
+    margin-bottom: 15px; /* Add space between inputs */
+    font-size: 16px; /* Increase font size for inputs */
+}
+
+/* Registration Button Styling */
+.register-form button {
+    background-color: #f0c14b; /* Orange background color */
+    color: black; /* White text color */
+    padding: 12px 20px; /* Adjust button padding */
+    border: none; /* Remove default button border */
+    border-radius: 4px; /* Slightly more rounded corners for the button */
+    cursor: pointer; /* Indicate clickable action */
+    font-weight: bold; /* Bold text for the button */
+    margin-top: 10px; /* Add space above the button */
+    margin-bottom: 20px; /* Add space below the button */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.register-form button:hover {
+    background-color: #e0a03d; /* Darker orange on hover */
+}
+
+/* Link Styling */
+.register-form a {
+    color: #0073bb; /* Blue text color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 14px; /* Slightly smaller font size for links */
+}
+
+.register-form a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Divider Styling */
+.register-form .divider {
+    margin-bottom: 20px; /* Add space below the divider */
+}
+
+.register-form .divider hr {
+    border: 1px solid #ddd; /* Light gray border for divider lines */
+    margin: 5px 0; /* Add space around divider lines */
+}
+
+.register-form .divider span {
+    color: #888; /* Light gray text color for divider text */
+    font-size: 14px; /* Adjust divider text font size */
+    padding: 0 10px; /* Add padding around divider text */
+    background: #fff; /* White background for the span */
+    position: relative; /* Required for the absolute positioning */
+    top: -10px; /* Adjust position */
+    z-index: 1; /* Make sure the span is above the line */
+}

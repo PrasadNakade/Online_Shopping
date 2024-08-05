@@ -1,0 +1,78 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.category-container {
+    width: 60%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.add-product-container {
+    width: 35%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.add-category label {
+    display: inline-block;
+    width: 250px;
+    margin-top: 10px;
+}
+
+.add-category input, 
+.add-category select {
+    width: calc(100% - 160px); /* Adjusted to fit within the container */
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.add-category button.add-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f0c14b;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.add-category button.add-button:hover {
+    background-color: #f0c14b;
+}
+
+.category-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.category-table th, .category-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.category-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+.category-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.category-table tr:hover {
+    background-color: #ddd;
+}
+
+.category-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color:  #f0c14b;
+    color: black;
+}

@@ -1,0 +1,22 @@
+<!-- Welcome {{name}}  <br>
+
+
+<button (click)="changeWhatToShow(1)">Product</button><br>
+
+
+
+<div *ngIf="whatToShow==1">
+    <app-product></app-product>
+</div> -->
+
+<div class="welcome-message">
+    Welcome {{name}}
+</div>
+
+<div class="welcome-container">
+    
+    <button (click)="changeWhatToShow(1)">Product</button>
+    <div *ngIf="whatToShow==1">
+        <app-product></app-product>
+    </div>
+</div>

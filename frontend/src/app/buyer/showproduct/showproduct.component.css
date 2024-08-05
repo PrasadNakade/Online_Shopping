@@ -1,0 +1,128 @@
+/* Container for the filter form and table */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh; /* Ensures the container takes at least the full viewport height */
+}
+
+/* Style for the filter form */
+select, input[type="number"] {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #f0c14b;
+    color: #111;
+    border: 1px solid #a88734;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e2a73f; /* Optional: Hover effect for buttons */
+}
+
+/* Style for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+/* Style for each row in the table */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Style for table cells */
+td {
+    vertical-align: top;
+}
+
+td b {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Specific styles for the rating dropdown */
+select {
+    background-color: #f8f9fa;
+}
+
+/* Style for stock information */
+.ng-container {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Remove default border from the button within the table */
+button {
+    border: none;
+    background-color: transparent;
+    color: #007bff;
+    font-size: 14px;
+    padding: 0;
+}
+
+button td {
+    padding: 0;
+}
+
+/* New styles specifically for the Add to Cart button */
+.add-to-cart {
+    background-color: goldenrod;
+    color: black;
+    border: 1px solid #a88734;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #e6b12e;
+}
+
+.load {
+  background-color: #f0c14b;
+  border: 1px solid #a88734; /* Optional: Adds a border to complement the background color */
+  border-radius: 5px; /* Optional: Rounds the corners of the button */
+  color: #111; /* Optional: Sets the text color */
+  padding: 10px 20px; /* Optional: Adds padding inside the button */
+  font-size: 16px; /* Optional: Sets the font size */
+  cursor: pointer; /* Shows a pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition effect for background color change */
+}
+
+.load:hover {
+  background-color: #e2a73f; /* Darker shade of #f0c14b for hover effect */
+}

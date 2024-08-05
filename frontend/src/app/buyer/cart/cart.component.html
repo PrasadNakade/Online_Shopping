@@ -1,0 +1,37 @@
+<table border="1">
+    <tr>
+        <th>SN</th>
+<th>NAME</th>
+<th>PRICE</th>
+<th>DISCOUNT</th>
+<th>TOTAL STOCK</th>
+<th>ENTER QUANTITY</th>
+<th>AMOUNT</th>
+<th>AMOUNT AFTER <br>
+    DISCOUNT</th>
+<th>ACTION</th>
+
+        <!-- <th>order</th> -->
+    </tr>
+
+    <tr *ngFor="let l of list; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ l.name }}</td>
+        <td>{{ l.price }}</td>
+        <td>{{ l.discount }}</td>
+        <td>{{ l.quantity }}</td>
+        <td>
+            <input type="number" [(ngModel)]="l.userquantity" (change)="validateQunatity(l)">
+        </td>
+        <td>{{ l.userquantity*l.price }}</td>
+        <td>{{(l.userquantity*l.price)-(l.price*l.userquantity*l.discount/100)}}</td>
+        <!-- <td>{{getDiscountPrice()}}</td>  -->
+        <td><button (click)="deleteCat(l)">DELETE</button></td>
+        
+    </tr>
+
+    
+</table>
+
+<button (click)="placeOrder()">ORDER</button>
+

@@ -1,0 +1,85 @@
+<b>CATEGORY::</b>
+<select [(ngModel)]="catid">
+  <option *ngFor="let cat of cats" [value]="cat.id">{{cat.name}}</option>
+</select><br>
+<b>MINPRICE::</b> <input type="number" [(ngModel)]="minprice"><br>
+<b>MAXPRICE:: </b><input type="number" [(ngModel)]="maxprice"><br>
+<b>MINRATING::</b> <input type="number" [(ngModel)]="minrating"><br>
+<button   class="load" (click)="loadFilterData()">Load Products</button>
+
+<!-- id, name, price, rating, description, discount, quantity, days -->
+<!-- <table border="1">
+  <tr *ngFor="let p of prods; let i = index">
+    <td><b>Id:</b><br> {{i + 1}}</td>
+    <td><b>Price:</b><br> {{p.price}}</td>
+    <td><b>Description:</b><br> {{p.description}}</td>
+    <td><b>Discount:</b><br> {{p.discount}}</td>
+    <td><b>Quantity:</b><br> {{p.quantity}}</td>
+    <td><b>Days:</b><br> {{p.days}}</td>
+    <td><b>Rating:</b><br> {{p.rating}}</td><br>
+    
+    <button class="add-to-cart" (click)="addToCart(p)"><td>Add to cart</td></button>
+    
+    <select [(ngModel)]="p.rating">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+    <button (click)="addRating(p)">Rate</button>
+
+
+    <td>
+      <ng-container *ngIf="p.quantity === 0">No Stock Available</ng-container><br>
+      <ng-container *ngIf="p.quantity > 0 && p.quantity <= 5">Limited Stock Available</ng-container><br>
+      <ng-container *ngIf="p.quantity > 5">Stock Available</ng-container><br>
+      <ng-container *ngIf="p.days < 5">New Stock</ng-container><br>
+    </td>
+  </tr>
+</table> -->
+
+
+<table border="1">
+  <tr>
+    <th>ID</th>
+<th>PRICE</th>
+<th>DESCRIPTION</th>
+<th>DISCOUNT</th>
+<th>QUANTITY</th>
+<th>DAYS</th>
+<th>RATING</th>
+<th>ACTIONS</th>
+<th>RATING</th>
+<th>STATUS</th>
+
+  </tr>
+  <tr *ngFor="let p of prods; let i = index">
+    <td>{{i + 1}}</td>
+    <td>{{p.price}}</td>
+    <td>{{p.description}}</td>
+    <td>{{p.discount}}</td>
+    <td>{{p.quantity}}</td>
+    <td>{{p.days}}</td>
+    <td>{{p.rating}}</td>
+    <td>
+      <button class="add-to-cart" (click)="addToCart(p)">Add to cart</button><br>
+      
+    </td>
+    <td><select [(ngModel)]="p.rating">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+    <button (click)="addRating(p)">Rate</button></td>
+    <td>
+      <ng-container *ngIf="p.quantity === 0">No Stock Available</ng-container><br>
+      <ng-container *ngIf="p.quantity > 0 && p.quantity <= 5">Limited Stock Available</ng-container><br>
+      <ng-container *ngIf="p.quantity > 5">Stock Available</ng-container><br>
+      <ng-container *ngIf="p.days < 5">New Stock</ng-container>
+    </td>
+  </tr>
+</table>
+

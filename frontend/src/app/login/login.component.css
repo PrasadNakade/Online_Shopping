@@ -1,0 +1,167 @@
+/* Overall Login Container Styling */
+.login-container {
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+    height: 100vh; /* Set container height to 100% viewport height */
+    background-color: #eef2f5; /* Slightly lighter gray background color */
+    font-family: Arial, sans-serif; /* Set a clean font family */
+}
+
+/* Login Form Styling */
+.login-form {
+    width: 350px; /* Set form width */
+    background-color: #fff; /* White background for the form */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* More rounded corners for the form */
+    padding: 30px; /* Padding for spacing within the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    text-align: center; /* Center text within the form */
+}
+
+/* Logo Styling (if you decide to include an image) */
+.logo {
+    margin-bottom: 20px; /* Add space below the logo */
+}
+
+.logo img {
+    width: 150px; /* Adjust image width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Login Form Heading */
+.login-form h1 {
+    font-size: 24px; /* Set heading font size */
+    margin-bottom: 20px; /* Add space below the heading */
+    color: #333; /* Darker text color */
+}
+
+/* Labels and Input Fields */
+.login-form label {
+    display: block; /* Display labels on separate lines */
+    margin-bottom: 5px; /* Add space below labels */
+    font-weight: bold; /* Bold text for labels */
+    color: #555; /* Medium gray text color */
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%; /* Set input width to full width */
+    padding: 12px; /* Increase padding for better readability */
+    border: 1px solid #ccc; /* Light gray border for inputs */
+    border-radius: 4px; /* Slightly more rounded corners for inputs */
+    box-sizing: border-box; /* Include border in width calculation */
+    margin-bottom: 15px; /* Add space between inputs */
+    font-size: 16px; /* Increase font size for inputs */
+}
+
+/* Login Button Styling */
+.login-form button {
+    background-color: #f0c14b; /* Orange background color */
+    color: black; /* White text color */
+    padding: 12px 20px; /* Adjust button padding */
+    border: none; /* Remove default button border */
+    border-radius: 4px; /* Slightly more rounded corners for the button */
+    cursor: pointer; /* Indicate clickable action */
+    font-weight: bold; /* Bold text for the button */
+    margin-top: 10px; /* Add space above the button */
+    margin-bottom: 20px; /* Add space below the button */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.login-form button:hover {
+    background-color: #e0a03d; /* Darker orange on hover */
+}
+
+/* Link Styling */
+.login-form a {
+    color: #0073bb; /* Blue text color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 14px; /* Slightly smaller font size for links */
+}
+
+.login-form a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Divider Styling */
+.login-form .divider {
+    margin-bottom: 20px; /* Add space below the divider */
+}
+
+.login-form .divider hr {
+    border: 1px solid #ddd; /* Light gray border for divider lines */
+    margin: 5px 0; /* Add space around divider lines */
+}
+
+.login-form .divider span {
+    color: #888; /* Light gray text color for divider text */
+    font-size: 14px; /* Adjust divider text font size */
+    padding: 0 10px; /* Add padding around divider text */
+    background: #fff; /* White background for the span */
+    position: relative; /* Required for the absolute positioning */
+    top: -10px; /* Adjust position */
+    z-index: 1; /* Make sure the span is above the line */
+}
+
+.yellow-button {
+    background-color: gold; /* Button color */
+    color: black; /* Text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    position: absolute; /* Absolute positioning */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the rigt */
+}
+/*  */
+
+.shopping-center {
+    /* Add background color */
+    background-color:lightyellow;
+    /* Add padding */
+    padding: 20px;
+
+    /* Add border */
+    border: 1px solid #ddd;
+
+    /* Center the text */
+    text-align: center;
+
+    /* Set font properties */
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+
+    /* Add some margin */
+    margin: 20px auto;
+
+    /* Set the max-width and center the element */
+    max-width: 400px;
+}
+
+
+
+.demo {
+    position: fixed;
+    right: 10px;
+    top: 150px;
+    width: 150px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.demo h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: black;
+}
+
+.demo p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: black;
+}

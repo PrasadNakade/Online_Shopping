@@ -1,0 +1,16 @@
+<div class="welcome-message">
+    Welcome {{name}}
+</div>
+
+
+<button (click)="changeWhatToShow(1)">PRODUCTS</button>
+
+<button (click)="changeWhatToShow(2)">CART</button>
+
+
+<div *ngIf="whatToShow==1">
+    <app-showproduct></app-showproduct>
+</div>
+<div *ngIf="whatToShow==2">
+    <app-cart></app-cart>
+</div>

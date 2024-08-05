@@ -1,0 +1,62 @@
+/* Style for the container holding buttons and content */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Style for the buttons */
+button {
+    background-color:  #f0c14b;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color:  #f0c14b;
+}
+
+/* Style for the content divs */
+div {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Style for 'app-showproduct' and 'app-cart' components */
+app-showproduct, app-cart {
+    display: block;
+    width: 100%;
+}
+
+/* Optional: Specific styles for 'app-showproduct' and 'app-cart' components */
+app-showproduct {
+    background-color: #f8f9fa;
+}
+
+app-cart {
+    background-color: #e9ecef;
+}
+
+
+.welcome-message {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 5px;
+}

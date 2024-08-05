@@ -1,0 +1,57 @@
+<!-- <div>
+<table border="1" >
+    <tr>
+        <th>sn</th>
+      
+        <th>categoryname</th> -->
+        <!-- <th>addedby</th> -->
+        
+        <!-- <th>action</th>
+    </tr>
+   
+    <tr *ngFor="let info of list;let i=index">
+        <td>{{i+1}}</td> -->
+        <!-- <td>{{info.categoryname}}</td> -->
+<!--         
+
+        <td>{{info.name}}</td>
+        <td><button (click)="deleteById(info)">delete</button></td>
+    </tr>
+
+
+</table>
+
+Add Category: <br>
+Category:: <input type="text" [(ngModel)]="name"><br>
+<button (click)="addCategory()">addCategory</button> <br><br> 
+
+
+
+{{categoryName}} -->
+
+
+<div class="category-container">
+    <table class="category-table">
+        <tr>
+            <th>SN</th>
+            <th>Category Name</th>
+            <th>Action</th>
+        </tr>
+        <tr *ngFor="let info of list; let i = index">
+            <td>{{i + 1}}</td>
+            <td>{{info.name}}</td>
+            <td><button class="delete-button" (click)="deleteById(info)">Delete</button></td>
+        </tr>
+    </table>
+
+    <div class="add-category">
+        <h2>Add Category:</h2>
+        <label for="category-input">Category:</label>
+        <input type="text" id="category-input" [(ngModel)]="name">
+        <button class="add-button" (click)="addCategory()">Add Category</button>
+    </div>
+    
+    <div class="category-name-display">
+        {{categoryName}}
+    </div>
+</div>
